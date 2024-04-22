@@ -118,6 +118,191 @@ header nav a.red {
     color: var(--secondary);
 }
 
+section .area-banner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 74px;
+    padding-bottom: 90px;
+}
+
+section .left-side {
+    width: 500px;
+}
+
+section .left-side h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+section .left-side p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--third);
+    padding-top: 30px;
+}
+
+section .left-side h2 span {
+    color: var(--secondary);
+}
+
+section .right-side {
+    padding-left: 20px;
+}
+
+section .right-side img{
+    width: 615px;
+}
+
+
+section .background-filter {
+    background-color: var(--foreground);
+    height: 100vh;
+}
+
+section .title-filter {
+    display: flex;
+    justify-content: center;
+    padding: 71px 0px 34px;
+}
+
+section .title-filter h2 {
+    font-size: 32px;
+}
+
+section .card-filter {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+}
+
+section .card-filter {
+    background-color: var(--cardBackground);
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+}
+
+.filter .box-form {
+    padding-top: 55px;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter .headline {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.filter .headline img {
+    margin-right: 7px;
+    width: 12px;
+}
+
+.filter .headline .title-headline {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.filter form {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.filter form input,
+.filter form select {
+    width: 309px;
+    background-color: var(--background);
+    border: none;
+    height: 46px;
+    outline: none;
+    margin-bottom: 50px;
+    padding: 0px 5px;
+    border-radius: 3px;
+}
+
+.form-group button{
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+    padding: 12px 0px;
+    width: 309px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.form-group button:hover {
+    opacity: 0.8;
+}
+
+.column-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+   
+    section .area-banner {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    section .left-side {
+        width: 80%;
+        padding: 0 20px;
+    }
+
+    section .left-side h2 {
+        font-size: 42px;
+    }
+
+    section .left-side p{
+        font-size: 16px;
+    }
+
+    section .right-side  {
+        display: none;
+    }
+    
+    .filter {
+        padding: 0px 20px;
+    }
+
+    .filter .title-filter h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    section .background-filter {
+        height: auto;
+    }
+
+    section .card-filter .box-form {
+        padding: 40px;
+    }
+
+    section .card-filter form {
+        grid-template-columns: 1fr;
+    }
+
+    section .title-headline {
+        font-size: 15px;
+    }
+
+    .filter .headline img {
+        width: 18px;
+    }
+
+    section .card-filter form input,
+    section .card-filter form select {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 @media (width > 900px) {
     header .menu-opener {
@@ -140,6 +325,7 @@ header nav a.red {
 
     header nav {
         max-height: 100vh;
+        padding: 0;
     }
 
     header nav ul {
@@ -176,4 +362,6 @@ header nav a.red {
         border: 1px solid var(--secondary);
         color: #fff;
     }
+
+    
 }
