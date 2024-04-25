@@ -113,9 +113,19 @@ header nav a:hover {
     opacity: 0.8;
 }
 
-header nav a.red {
-    font-weight: 600;
+header .user-enter {
+    display: flex;
+}
+
+header .user-enter a {
     color: var(--secondary);
+}
+
+.dropdown-menu a {
+    padding: 0;
+    border: none;
+    color: #000;
+    font-weight: 500;
 }
 
 section .area-banner {
@@ -242,6 +252,7 @@ section .card-filter {
     margin-top: 30px;
 }
 
+
 @media (max-width: 600px) {
    
     section .area-banner {
@@ -301,6 +312,18 @@ section .card-filter {
         width: 100%;
         margin-bottom: 20px;
     }
+
+    header .user-enter img {
+        display: none;
+        width: 28px;
+        margin-right: 6px;
+    }
+    header .user-enter .arrow-dowm {
+        width: 15px;
+        margin-left: 5px;
+        display: block;
+    }
+
 }
 
 
@@ -329,6 +352,7 @@ section .card-filter {
     }
 
     header nav ul {
+        align-items: center;
         flex-direction: row;
         padding-bottom: 0;
     }
@@ -340,28 +364,63 @@ section .card-filter {
     header nav a {
         border: 1px solid var(--third);
         border-radius: 3px;
-        padding: 14px 50px;
-        font-size: 15px;
-    }
-
-    header nav a {
-        border: 1px solid var(--third);
-        border-radius: 3px;
         padding: 12px 40px;
         font-size: 15px;
     }
 
-    header nav a:hover {
-        background-color: var(--third);
-        color: #fff;
-        transition:  0.2s;
+    header nav li img {
+        width: 31px;
     }
 
-    header nav a.red {
-        background-color: var(--secondary);
-        border: 1px solid var(--secondary);
-        color: #fff;
+    .user-enter{
+        display: flex;
+        align-items: center;
     }
 
-    
+    .user-enter a{
+        border: none;
+        color: var(--secondary);
+        padding: 0;
+        padding-left: 13px;
+    }
+
+    .user-enter a:hover {
+        background-color:transparent;
+        color: var(--secondary);
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        text-align: right;
+    }
+
+    .options-dropdowm {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .dropdown-menu li {
+        padding: 5px 0px;
+    }
+
+    .dropdown-menu a {
+        padding: 0;
+        border: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .arrow-dowm {
+        width: 12px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .arrow-dowm:hover {
+        cursor: pointer;
+    }
+
 }
